@@ -1,4 +1,5 @@
 const userRouter = require("./userRouter");
+const movieRouter = require("./movieRouter");
 
 const router = require("express").Router();
 
@@ -6,6 +7,10 @@ const moduleRoutes = [
   {
     path: "/user",
     route: userRouter,
+  },
+  {
+    path: "/movie",
+    route: movieRouter,
   },
 ];
 
